@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header  */
+/**navbar  */
+nav {
+    background-color: rgb(255, 255, 255);
+}
+
+nav .logo h2 {
+    font-weight: bold;
+}
+
+nav .logo h2 span {
+    color: #ce1212;
+}
+
+.navbar {
+
+    z-index: 99999;
+    padding-top: 15px;
+}
+
+.logo {
+
+    z-index: 99999;
+}
+
+
+.list {
+
+    z-index: 99999;
+}
+
+ul li {
+
+    list-style: none;
+}
+
+ul li a {
+
+    text-decoration: none;
+    color: #7f7f90;
+    font-weight: 600;
+}
+
+ul li a:focus {
+
+    color: #000000;
+    border-bottom: 2px solid #ce1212;
+    padding-bottom: 0.5rem;
+
+}
+
+ul li a:hover {
+
+    color: #000000;
+    border-bottom: 2px solid #ce1212;
+    padding-bottom: 0.5rem;
+
+}
+
+.dropdown {
+
+    position: relative;
+}
+
+.dropdown ul {
+
+    display: none;
+}
+
+.dropdown ul {
+
+    display: none;
+}
+
+.dropdown:hover>ul {
+    line-height: 2;
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 20px 12px;
+    width: 12vw;
+    border-radius: 5px;
+    top: 2.2rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+}
+
+.deepDropdown:hover>ul {
+    line-height: 2;
+    display: block;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 5vh;
+    right: 11.5rem;
+    padding: 20px 12px;
+    width: 12vw;
+    border-radius: 5px;
+}
+
+nav button {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #ce1212;
+    border: none;
+}
+
+nav button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu,
+.checkbox,
+.close {
+
+    display: none;
+}
+
+.opacity3 {
+
+    display: none;
+}
+
+.nav-respo {
+
+    display: none;
+}
+
+/**Hero  */
+.hero {
+    background-color: #f2f2f2;
+
+    width: 100%;
+    min-height: 60vh;
+
+    padding: 60px 0;
+}
+
+.container {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+.firstH1 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 70px;
+    color: #37373f;
+}
+
+.title p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #72746e;
+}
+
+.btnHero .bookAtableBtn {
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: #ce1212;
+    border: none;
+}
+
+.btnHero {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btnHero .bookAtableBtn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.btnHero .videoBtn {
+    border: none;
+    background: none;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.videoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.videoBtn i {
+    color: #ce1212;
+    font-size: 30px;
+
+}
+
+/*** style repeat  */
+.titles{
+    text-align: center;
+}
+.titles p {
+    color: #72746e;
+    font-family: "Roboto", sans-serif;
+}
+
+.titles h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    color: #37373f;
+}
+
+.titles h1 span{
+    color: #ce1212;
+
+}
+
+/**About  */
