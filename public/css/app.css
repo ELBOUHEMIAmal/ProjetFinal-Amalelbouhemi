@@ -244,7 +244,10 @@ nav button a {
 }
 
 /**About  */
-.about {}
+.about {
+    padding: 60px 0;
+
+}
 
 .description {
     padding: 60px 0;
@@ -306,17 +309,26 @@ nav button a {
 
 }
 
+.whyChooseYummy {
+    padding: 60px 0;
+    background-color: #f2f2f2;
+}
+
 .parentWhy {
     display: flex;
     justify-content: center;
     gap: 2vw;
-    background-color: #f2f2f2;
 }
 
 .redWhy {
+    padding: 14px 35px;
     background-color: #ce1212;
     color: white;
-    width: 50rem;
+    width: 29rem;
+}
+
+.redWhy h1 {
+    padding-bottom: 20px;
 }
 
 .redWhy button {
@@ -325,9 +337,149 @@ nav button a {
     border-radius: 25px;
     padding: 10px 30px;
     background-color: rgba(245, 245, 245, 0.189);
+    text-align: center;
+}
+
+.redWhy button:hover {
+    background-color: white;
+    color: #ce1212;
 }
 
 .details {
     display: flex;
     gap: 2vw;
+}
+
+.icons {
+    padding: 10px 30px;
+    background: white;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icons i {
+    border-radius: 50%;
+    background: #fcf3f3;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ce1212;
+
+}
+
+.icons:hover i {
+    color: white;
+    background-color: #ce1212;
+}
+
+
+/** lastDiv in about  */
+
+.bg-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    position: relative;
+    background-image: url(../images/stats-bg.jpg);
+    width: 100%;
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opacity {
+    position: absolute;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.stats {
+    display: flex;
+    gap: 10vw;
+    text-align: center;
+
+}
+
+.stat {
+    z-index: 9999;
+    color: white;
+}
+
+.stat h1 {
+    font-size: 50px;
+}
+
+.stat p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b4b5b2;
+}
+
+.ourMenu {
+}
+
+.listesOfDay {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    color: #37373F;
+    font-size: 18px;
+    font-weight: 400;
+}
+.listesOfDay li{
+    border-bottom: 2px solid #37373F;
+    padding-bottom: 10px;
+}
+.listesOfDay li:hover{
+    border-bottom:2px solid #ce1212;
+}
+.namePlat {
+    padding-top: 10px;
+}
+.namePlat h3{
+    color: #ce1212;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 40px;
+    
+}
+.platsDetails{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+.prices{
+    padding: 10px 25px;
+    text-align: center;
+}
+.prices p{
+    color: #37373f;   
+}
+.prices .price{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ce1212;
+}
+.prices h2{
+    color:#37373F;
+    font-weight: 500;
+    font-size: 24px;
+}
+.breakfastPlats, .lunchPlats, .dinnerPlats{
+    display: none;
 }
