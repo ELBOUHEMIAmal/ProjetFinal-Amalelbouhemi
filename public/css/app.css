@@ -430,6 +430,7 @@ nav button a {
 }
 
 .ourMenu {
+    padding: 60px 0;
 }
 
 .listesOfDay {
@@ -440,46 +441,265 @@ nav button a {
     font-size: 18px;
     font-weight: 400;
 }
-.listesOfDay li{
+
+.listesOfDay li {
     border-bottom: 2px solid #37373F;
     padding-bottom: 10px;
 }
-.listesOfDay li:hover{
-    border-bottom:2px solid #ce1212;
+
+.listesOfDay li:hover {
+    border-bottom: 2px solid #ce1212;
 }
+
 .namePlat {
     padding-top: 10px;
 }
-.namePlat h3{
+
+.namePlat h3 {
     color: #ce1212;
     font-family: "Amatic SC", sans-serif;
     font-size: 40px;
-    
+
 }
-.platsDetails{
+
+.platsDetails {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5vw;
 }
-.prices{
+
+.prices {
     padding: 10px 25px;
     text-align: center;
 }
-.prices p{
-    color: #37373f;   
+
+.prices p {
+    color: #37373f;
 }
-.prices .price{
+
+.prices .price {
     font-size: 24px;
     font-weight: 600;
     color: #ce1212;
 }
-.prices h2{
-    color:#37373F;
+
+.prices h2 {
+    color: #37373F;
     font-weight: 500;
     font-size: 24px;
 }
-.breakfastPlats, .lunchPlats, .dinnerPlats{
+
+.breakfastPlats,
+.lunchPlats,
+.dinnerPlats {
     display: none;
+}
+
+.testimonial {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+}
+
+.border-radius {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.infos {
+    padding-left: 25px;
+    border-left: 3px solid #ce1212;
+    width: 40vw;
+}
+
+.infos h3 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infos .fontSize {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 10px;
+}
+
+.modify {
+    font-size: 30px;
+    color: #e08282;
+}
+
+.quote-icon-right {
+    transform: rotate(180deg);
+
+}
+
+.stars i {
+    color: #ffc107;
+}
+
+/* DISPLAY NONE MO2A9AT */
+.carousel4,
+.carousel2,
+.carousel3 {
+    display: none;
+}
+
+
+/** EVENTS  */
+.parties {
+    width: 200vw;
+    display: flex;
+    gap: 2px;
+}
+
+/* .styleRepeat{
+    position: relative;
+} */
+
+.events {
+    padding: 60px 0;
+    overflow: hidden;
+
+}
+
+.custum {
+    width: 497px;
+    min-height: 700px;
+    position: relative;
+    background-image: url(../images/events-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.private {
+    width: 497px;
+    min-height: 700px;
+    position: relative;
+    background-image: url(../images/events-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.birthday {
+    width: 497px;
+    min-height: 700px;
+    position: relative;
+    background-image: url(../images/events-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.wedding {
+    width: 497px;
+    min-height: 700px;
+    position: relative;
+    background-image: url(../images/events-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.opacity2 {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+
+.priceOfParties {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.priceOfParties h3 {
+    font-size: 30px;
+    font-family: "Amatic SC", sans-serif;
+
+}
+
+.priceOfParties h1 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #ce1212;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.priceOfParties .descrip {
+    color: #cecee1;
+}
+
+.chefs {
+    display: grid;
+    grid-template-columns: auto auto auto 4vw;
+    background-color: #ffc107;
+    gap: 2vw;
+}
+
+.master {
+        position: relative;
+
+    background-image: url(../images/chefs/chefs-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.patissier {
+    position: relative;
+    background-image: url(../images/chefs/chefs-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.cook {
+    position: relative;
+    background-image: url(../images/chefs/chefs-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.chefImage {
+    position: relative;
+}
+
+.social {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fcf3f376;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+}
+
+.social a i {
+    font-size: 18px;
+    color: #37373f;
+
+}
+
+.content {
+    text-align: center;
+    background: white;
+    color: #37373F;
+    position: absolute;
+    bottom: 0;
 }
