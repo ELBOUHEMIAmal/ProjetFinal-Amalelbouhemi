@@ -641,42 +641,40 @@ nav button a {
     color: #cecee1;
 }
 
+.ourChefs {
+    padding: 60px 0;
+}
+
 .chefs {
-    display: grid;
-    grid-template-columns: auto auto auto 4vw;
-    background-color: #ffc107;
+    display: flex;
+    justify-content: center;
     gap: 2vw;
 }
 
+
+.cook,
+.patissier,
 .master {
-        position: relative;
-
-    background-image: url(../images/chefs/chefs-1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-}
-
-.patissier {
     position: relative;
-    background-image: url(../images/chefs/chefs-2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
-.cook {
-    position: relative;
-    background-image: url(../images/chefs/chefs-3.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
+.gallery{
+    padding: 60px 0;
 }
+.ourGallery{
+    padding: 60px 0;
+    background-color: #f9f9f9;
 
-.chefImage {
-    position: relative;
 }
-
+.carouselGallery{
+    
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .social {
     width: fit-content;
     padding: 5px 10px;
@@ -702,4 +700,93 @@ nav button a {
     color: #37373F;
     position: absolute;
     bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chefImage {
+    height: 530px;
+
+}
+
+.chefImage img {
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+
+
+
+/** book a table  */
+/* .book-a-table */
+
+.book-a-table{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.send-message {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.submitmsg {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+
+.submitmsg form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.inputs {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+.input{
+    padding: 10px 40px;
+}
+
+.padding2{
+        padding: 10px 93px;
+}
+.padding1{
+    padding: 10px 64px;
+}
+
+
+
+
+
+textarea {
+    width: 57.5vw;
+}
+.bookAtableBtn {
+    border-radius: 10px;
+    padding: 15px 40px;
+    background-color: #ce1212;
+    border: none;
+    color: white;
+}
+
+.contactUs{
+    padding: 60px 0;
+}
+.map iframe{
+    width: 100vw;
 }
