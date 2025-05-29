@@ -176,11 +176,9 @@ const slider = (index, myBtn ) => {
           let camera = carousel.querySelector('.carouselG')
           console.log(camera);
 
-          //^ ila kna f akhir tswira gha nrj3o l wayal tswira
           if(index >= slides.length){
             index = 0
           }else if(index < 0){
-            //^ ila kna f awal tswira o bghina nrj3o ; akhir tswira
             index = slides.length  - 1
           }
             
