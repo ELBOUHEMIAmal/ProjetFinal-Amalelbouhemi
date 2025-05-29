@@ -1,0 +1,48 @@
+@media (max-width: 992px) {
+  .list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 5px 30px;
+  }
+
+  .list ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .close {
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  /* ✔ Show menu when checkbox is checked */
+  .checkbox:checked ~ .list {
+    transform: translateX(0);
+  }
+
+  .modalLogin {
+    display: none; /* optional: hide the button on small screens */
+  }
+}

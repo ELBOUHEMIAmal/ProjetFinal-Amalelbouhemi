@@ -298,9 +298,11 @@ nav button a {
 .video-position {
     position: relative;
 }
-.positionAbs i{
+
+.positionAbs i {
     font-size: 80px;
 }
+
 .positionAbs {
     border-radius: 50%;
     width: 60px;
@@ -496,10 +498,15 @@ nav button a {
     font-size: 24px;
 }
 
-.breakfastPlats,
-.lunchPlats,
-.dinnerPlats {
+.hide {
     display: none;
+}
+
+
+
+.border-radius {
+    height: 200px;
+    border-radius: 50%;
 }
 
 .testimonial {
@@ -507,15 +514,25 @@ nav button a {
     padding: 60px 0;
 }
 
-.border-radius {
-    height: 200px;
-    border-radius: 50%;
+.carouselTest {
+    width: 100%;
 }
 
 .comments {
     display: flex;
     justify-content: center;
     gap: 5vw;
+    min-width: 90%;
+}
+
+.carousels {
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+}
+
+.carouselTest {
+
+    overflow: hidden;
 }
 
 .infos {
@@ -550,11 +567,6 @@ nav button a {
 }
 
 /* DISPLAY NONE MO2A9AT */
-.carousel4,
-.carousel2,
-.carousel3 {
-    display: none;
-}
 
 
 /** EVENTS  */
@@ -575,7 +587,7 @@ nav button a {
 }
 
 .custum {
-    width: 497px;
+    width: 540px;
     min-height: 700px;
     position: relative;
     background-image: url(../images/events-1.jpg);
@@ -671,10 +683,15 @@ nav button a {
 }
 
 .ourGallery {
+    overflow: hidden;
     padding: 60px 0;
     background-color: #f9f9f9;
 
 
+}
+
+.carouselG {
+    display: flex;
 }
 
 .carouselGallery {
@@ -808,7 +825,7 @@ textarea {
 }
 
 .map iframe {
-    width: 100vw;
+    width: 100%;
 }
 
 .callus {
@@ -1003,14 +1020,16 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 9999999;
-    
-}
-.carouselHero{
-    display: flex;
-        height: 60vh;
 
 }
-.carpuselBtn{
+
+.carouselHero {
+    display: flex;
+    height: 60vh;
+
+}
+
+.carpuselBtn {
     background-color: rgb(42, 41, 41);
     border: none;
     width: 35px;
@@ -1024,13 +1043,16 @@ footer {
     justify-content: center;
 
 }
-.next{
+
+.next {
     right: 10px;
 }
-.prev{
+
+.prev {
     left: 10px;
 }
- .slide {
+
+.slide {
     display: none;
     position: fixed;
     top: 0;
@@ -1047,7 +1069,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.948);
 }
 
-.videoContent, .slide img {
+.videoContent,
+.slide img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1058,13 +1081,16 @@ footer {
     border: none;
     padding: 0;
 }
-#closeBtn0, #closeBtn6{
+
+#closeBtn0,
+#closeBtn6 {
     top: -50px;
     right: -50px;
 }
+
 .close-btn {
     position: absolute;
-        top: 37px;
+    top: 37px;
     right: 57px;
     font-size: 30px;
     color: white;
@@ -1094,8 +1120,97 @@ footer {
     height: 100%;
     border: none;
 }
-.slide{
+
+.slide {
     display: flex;
 }
 
 
+@media (max-width: 992px) {
+    nav {
+        justify-content: space-around;
+    }
+
+    .list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 5px 30px;
+    }
+
+    .list ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .close {
+        display: block;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .checkbox:checked~.list {
+        transform: translateX(0);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .image img{
+        width: 400px;
+    }
+    .parentAbout{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img img{
+        width: 539px;
+    }
+    .parentWhy{
+        align-items: center;
+        flex-direction: column;
+    }
+    .details, .stats{
+        flex-direction: column;
+    }
+    .icons{
+        width: 86vw;
+    }
+    .bg-img{
+        height: 136vh;
+    }
+    .comments{
+        align-items: center;
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .infos{
+        width: 90vw;
+    }
+    .styleRepeat {
+        flex-direction: column;
+    }
+
+
+}
