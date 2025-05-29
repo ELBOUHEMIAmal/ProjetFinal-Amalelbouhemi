@@ -17,8 +17,11 @@
 </head>
 
 <body>
+
+
     <header>
         <nav class=" nav-desk navbar fixed-top d-flex justify-content-lg-evenly align-content-center ">
+
             <div class=" logo-desk logo">
                 <h2>Yummy<span>.</span></h2>
             </div>
@@ -36,7 +39,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#menu">Menu</a>
+                        <a href="#Menu">Menu</a>
                     </li>
                     <li>
                         <a href="#Event">Event</a>
@@ -78,11 +81,25 @@
             </label>
 
             <div class="opacity3"></div>
-            <button>
+            <button class="modalLogin">
                 <a href="#bookAtable">Book A Table</a>
             </button>
+           
+
+
         </nav>
+
     </header>
+    <div class="modalOpacity"></div>
+    <div class="loginModal">
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <div class="btns">
+            <button class="login">Login</button>
+            <button class="closeModal"> Close</button>
+        </div>
+
+    </div>
     <main>
         <section class="hero">
             <div class="container">
@@ -97,6 +114,15 @@
                             <i class="bi bi-play-circle"></i>
                             Watch Video
                         </button>
+                         <div class="videoCarousel" id="video">
+                <div class="bgOpacity" id="opacityVideo"></div>
+                <div class="videoContent">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <div class="video-container">
+                        <iframe id="videoFrame" src="" allowfullscreen allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
 
                     </div>
                 </div>
@@ -105,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="description">
                 <div class="titleAbout titles">
                     <p>ABOUT US</p>
@@ -204,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <section class="ourMenu">
+        <section class="ourMenu" id="Menu">
             <div class="titleMenu titles">
                 <p>OUR MENU</p>
                 <h1>CHECK OUR <span>YUMMY MENU
@@ -397,7 +423,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial">
+        <section class="testimonial" id="">
             <div class="testimonials">
                 <div class="titletest titles">
                     <p>TESTIMONIALS</p>
@@ -495,7 +521,7 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section class="events" id="Event">
             <div class="carousel parties">
                 <div class="styleRepeat custum">
                     <div class="opacity2"></div>
@@ -546,7 +572,12 @@
                 </div>
             </div>
         </section>
-        <section class="ourChefs">
+        <section class="ourChefs" id="chefs">
+            <div class="titleMenu titles">
+                <p>CHEFS</p>
+                <h1>OUR <span>YUMMY MENU
+                    </span></h1>
+            </div>
             <div class="chefs">
                 <div class="master">
                     <div class="chefImage">
@@ -606,7 +637,7 @@
                 </div>
             </div>
         </section>
-        <section class="book-a-table">
+        <section class="book-a-table" id="bookAtable">
 
             <div class="titleBook titles">
                 <p>BOOK A TABLE</p>
@@ -620,14 +651,14 @@
                 </div>
                 <div class="submitmsg">
                     <form action="">
-                        <div class="inputs">
-                            <input class="input" type="text" placeholder="your name">
-                            <input class="input" type="email" placeholder="Your Email">
-                            <input class="input" type="number" placeholder="your phone">
+                        <div class="inputsBook">
+                            <input class="inputBook" type="text" placeholder="your name">
+                            <input class="inputBook" type="email" placeholder="Your Email">
+                            <input class="inputBook" type="number" placeholder="your phone">
 
                             <input class="input padding1" type="date" placeholder="">
                             <input class="input padding2" type="time" placeholder="">
-                            <input class="input" type="text" placeholder="# of people">
+                            <input class="inputBook" type="text" placeholder="# of people">
 
 
                         </div>
@@ -639,103 +670,156 @@
             </div>
 
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="ourGallery">
                 <div class="titletest titles">
-                <p>GALLERY</p>
-                <h1>CHECK <span>OUR GALLERY</span></h1>
-            </div>
-            <div class="carouselGallery">
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-1.jpg" alt="" width="250">
+                    <p>GALLERY</p>
+                    <h1>CHECK <span>OUR GALLERY</span></h1>
                 </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-2.jpg" alt="" width="250">
+                <div class="carouselGallery">
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-1.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-2.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-3.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-4.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-5.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-6.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-7.jpg" alt="" width="250">
+                    </div>
+                    <div class="cards">
+                        <img src="./public/images/gallery/gallery-8.jpg" alt="" width="250">
+                    </div>
                 </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-3.jpg" alt="" width="250">
-                </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-4.jpg" alt="" width="250">
-                </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-5.jpg" alt="" width="250">
-                </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-6.jpg" alt="" width="250">
-                </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-7.jpg" alt="" width="250">
-                </div>
-                <div class="cards">
-                    <img src="./public/images/gallery/gallery-8.jpg" alt="" width="250">
-                </div>
-            </div>
             </div>
         </section>
-         <section class="contactUs" id="contact">
+        <section class="contactUs" id="contact">
             <div class="titleContact titles">
                 <p>CONTACT</p>
                 <h1>CHECK OUR <span>CONTACT
                     </span></h1>
             </div>
-                
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13347.067252661609!2d-8.542617603388672!3d33.246411951065284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91c2b168de333%3A0xf8e4fdf88e2c3adc!2sEspace%20Chair!5e0!3m2!1sfr!2sma!4v1744761875626!5m2!1sfr!2sma"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="contact">
-                    <div class="touch">
-                        
-                        <div class="callus">
-                            <div class="d-flex column-gap-4">
-                                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                                <div>
-                                    <h4>Location:</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
-                                </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13347.067252661609!2d-8.542617603388672!3d33.246411951065284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91c2b168de333%3A0xf8e4fdf88e2c3adc!2sEspace%20Chair!5e0!3m2!1sfr!2sma!4v1744761875626!5m2!1sfr!2sma"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact">
+                <div class="touch">
+
+                    <div class="callus">
+                        <div class="border-b">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
                             </div>
-                            <div class="border-b d-flex column-gap-4">
-                                <i class="bi bi-envelope flex-shrink-0"></i>
-                                <div>
-                                    <h4>Email:</h4>
-                                    <p>info@example.com</p>
-                                </div>
+                        </div>
+                        <div class="border-b ">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
                             </div>
-                            <div class="d-flex column-gap-4">
-                                <i class="bi bi-phone flex-shrink-0"></i>
-                                <div>
-                                    <h4>Call:</h4>
-                                    <p>+1 5589 55488 55</p>
-                                </div>
+                        </div>
+                        <div class="border-b">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55</p>
+                            </div>
+                        </div>
+                        <div class="border-b">
+                            <i class="icon bi bi-clock flex-shrink-0"></i>
+                            <div>
+                                <h4>Opening Hours:</h4>
+                                <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
                             </div>
                         </div>
                     </div>
-                    <div class="contactme">
-                        <form action="">
-                            <div class="inputs">
-                                <div class="top-inputs">
-                                    <input class="input" type="text" placeholder="your name">
-                                    <input class="input" type="email" placeholder="Your Email">
-
-                                </div>
-                                <div class="bottom-inputs">
-                                    <input class="input" type="text" placeholder="Subject">
-                                </div>
+                </div>
+                <div class="contactme">
+                    <form action="">
+                        <div class="inputs">
+                            <div>
+                                <input class="input topContact" type="text" placeholder="your name">
+                                <input class="input topContact" type="email" placeholder="Your Email">
                             </div>
-                            <textarea class="textarea" name="" id="" placeholder="message" rows="10"
-                                cols="117"></textarea>
-                        </form>
-                        <button>Send me message</button>
 
-                    </div>
-
+                            <input class="input bottomContact" type="text" placeholder="Subject">
+                        </div>
+                        <textarea class="textarea" name="" id="" placeholder="message" rows="10"></textarea>
+                    </form>
+                    <button class="bookAtableBtn">Send me message</button>
 
                 </div>
-            </section>
+
+
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class=" f-first d-flex justify-content-center align-items-center  displayFollow"
+            style="border-bottom: 1px solid grey;">
+            <div class="contentFooter">
+                <div class="first1-1 d-flex gap-3 changeColor">
+                    <i class=" fs-4 bi-geo-alt text-orange"></i>
+                    <div>
+                        <h4 class="text-white">Adress</h4>
+                        <p class=" text-white">A108 Adam Street</p>
+                        <p class="text-white">New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="first1-1 d-flex gap-3 changeColor ">
+                    <i class="fs-4 bi bi-telephone text-orange"></i>
+                    <div>
+                        <h4 class="text-white">Contact</h4>
+                        <p class="text-white"><span><b>Phone: </b></span>1 5589 55488 55</p>
+                        <p class="text-white"><span><b>Email: </b></span>info@example.com</p>
+                    </div>
+                </div>
+                <div class="first1-1 d-flex gap-3 changeColor">
+                    <i class=" fs-4 fs-3 text-orange bi bi-clock text-orange"></i>
+                    <div>
+                        <h4 class="text-white">Opening Hours</h4>
+                        <p class="text-white"><span><b>Mon-Sat: </b></span>11AM - 23PM</p>
+                        <p class="text-white"><span><b>Sunday: </b></span>Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="first1-2 w-25 ">
+                <h4 class="fw-bold text-white">Follow Us</h4>
+                <div class="d-flex gap-4 borderFooter">
+                    <i
+                        class=" fs-5 d-flex justify-content-center align-items-center f-icon text-grey  bi-twitter-x"></i>
+                    <i
+                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-facebook"></i>
+                    <i
+                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-instagram"></i>
+                    <i
+                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="f-second d-flex flex-column align-items-center pt-5">
+            <p class="text-white">Copyright <span class="text-white"><b>Yummy</b></span> All Rights Reserved</p>
+
+            <p class="text-white">Designed by <span class="textColor">BootstrapMade</span></p>
+        </div>
+    </footer>
     <script src="./public/js/app.js"></script>
 </body>
 
