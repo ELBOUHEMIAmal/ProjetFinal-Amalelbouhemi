@@ -84,7 +84,7 @@
             <button class="modalLogin">
                 <a href="#bookAtable">Book A Table</a>
             </button>
-           
+
 
 
         </nav>
@@ -114,16 +114,52 @@
                             <i class="bi bi-play-circle"></i>
                             Watch Video
                         </button>
-                         <div class="videoCarousel" id="video">
-                <div class="bgOpacity" id="opacityVideo"></div>
-                <div class="videoContent">
-                    <span class="close-btn" id="closeBtn">&times;</span>
-                    <div class="video-container">
-                        <iframe id="videoFrame" src="" allowfullscreen allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
+                         <div class="carousel-container" id="carousel1">
+                            <div class="carouselHero">
+                                <div class="bgOpacity" id="opacityVideo"></div>
+                                <div class="videoCarousel slide" id="videoHero" targetSlide="slideCarousel1">
+                                    
+                                    <div class="videoContent">
+                                        <span class="close-btn" id="closeBtn0">&times;</span>
+                                        <div class="video-container">
+                                            <iframe class="iframe" 
+                                                src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW" allowfullscreen
+                                                allow="autoplay"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="slide" targetSlide="slideCarousel1">
+                                     <span class="close-btn" id="closeBtn1">&times;</span>
+                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="400">
+                                </div>
+                                <div class="slide" targetSlide="slideCarousel1">
+                                     <span class="close-btn" id="closeBtn2">&times;</span>
+                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="400">
+                                </div>
+                                <div class="slide" targetSlide="slideCarousel1">
+                                     <span class="close-btn" id="closeBtn3">&times;</span>
+                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="400">
+                                </div>
+                                <div class="slide" targetSlide="slideCarousel1">
+                                     <span class="close-btn" id="closeBtn4">&times;</span>
+                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="400">
+                                </div>
+                                <div class="slide" targetSlide="slideCarousel1">
+                                     <span class="close-btn" id="closeBtn5">&times;</span>
+                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="400">
+                                </div>
+                            </div>
 
+
+
+                            <button class="prev carpuselBtn" carouselBtn="carousel1"><i
+                                    class="bi bi-chevron-left"></i></button>
+                            <button class="next carpuselBtn" carouselBtn="carousel1"><i
+                                    class="bi bi-chevron-right"></i></button>
+                        </div>
+                      
+                        
                     </div>
                 </div>
                 <div class="image">
@@ -167,11 +203,58 @@
                                 sint
                                 occaecat cupidatat non proident</p>
                         </div>
-                        <div class="video">
-                            <a href="https://youtu.be/kRCH8kD1GD0?si=q_rH7GCB-Jyg-E59" class="video-position">
-                                <img src="./public/images/about-2.jpg" alt="" width="478" class="positionVideo">
-                                <i class="bi bi-play-circle-fill play-button positionAbs"></i>
-                            </a>
+                        <div class="video video-position">
+                            <button class="videoBtn positionAbs">
+                             <i class="bi bi-play-circle-fill play-button "></i>
+                           
+                            </button>
+                            <div class="carousel-container" id="carousel2">
+                               <div class="carouselHero">
+                                   <div class="bgOpacity" id="opacityVideo"></div>
+                                   <div class="videoCarousel slide" id="videoAbout" targetSlide="slideCarousel1">
+                                       
+                                       <div class="videoContent">
+                                           <span class="close-btn" id="closeBtn6">&times;</span>
+                                           <div class="video-container">
+                                               <iframe class="iframe" 
+                                                   src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW" allowfullscreen
+                                                   allow="autoplay"></iframe>
+                                           </div>
+                                       </div>
+                                   </div>
+                                  
+                                   <div class="slide" targetSlide="slideCarousel1">
+                                        <span class="close-btn" id="closeBtn1">&times;</span>
+                                       <img src="./public/images/menu/menu-item-6.png" alt="" width="400">
+                                   </div>
+                                   <div class="slide" targetSlide="slideCarousel1">
+                                        <span class="close-btn" id="closeBtn2">&times;</span>
+                                       <img src="./public/images/menu/menu-item-1.png" alt="" width="400">
+                                   </div>
+                                   <div class="slide" targetSlide="slideCarousel1">
+                                        <span class="close-btn" id="closeBtn3">&times;</span>
+                                       <img src="./public/images/menu/menu-item-2.png" alt="" width="400">
+                                   </div>
+                                   <div class="slide" targetSlide="slideCarousel1">
+                                        <span class="close-btn" id="closeBtn4">&times;</span>
+                                       <img src="./public/images/menu/menu-item-3.png" alt="" width="400">
+                                   </div>
+                                   <div class="slide" targetSlide="slideCarousel1">
+                                        <span class="close-btn" id="closeBtn5">&times;</span>
+                                       <img src="./public/images/menu/menu-item-4.png" alt="" width="400">
+                                   </div>
+                               </div>
+   
+   
+   
+                               <button class="prev carpuselBtn" carouselBtn="carousel2"><i
+                                       class="bi bi-chevron-left"></i></button>
+                               <button class="next carpuselBtn" carouselBtn="carousel2"><i
+                                       class="bi bi-chevron-right"></i></button>
+                           </div>
+                                <img src="./public/images/about-2.jpg" alt="" width="478" class="positionVideo ">
+                               
+                           
                         </div>
                     </div>
                 </div>
