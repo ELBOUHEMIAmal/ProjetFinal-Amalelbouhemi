@@ -1,4 +1,25 @@
 @media (max-width: 992px) {
+  /* Ensure all elements are responsive */
+  * {
+    max-width: 100%;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  main,
+  section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 40px 1rem !important;
+  }
+
   .list {
     position: fixed;
     top: 0;
@@ -15,10 +36,62 @@
     padding: 5px 30px;
   }
 
+  .chefs {
+    flex-direction: column;
+  }
+
   .list ul {
     flex-direction: column;
     gap: 1.5rem;
     padding: 0;
+  }
+
+  /* Dropdown on Mobile */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown ul {
+    position: static;
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+  .dropdown:hover > ul,
+  .dropdown.active ul {
+    display: block;
+  }
+
+  .dropdown ul li a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .deepDropdown ul {
+    position: static;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
+  .deepDropdown:hover > ul,
+  .deepDropdown.active ul {
+    display: block;
+  }
+
+  .deepDropdown ul li a {
+    padding: 8px 30px;
+    padding-left: 30px;
+    font-size: 13px;
   }
 
   .menu {
@@ -37,12 +110,203 @@
     cursor: pointer;
   }
 
-  /* ✔ Show menu when checkbox is checked */
+  /* Show menu when checkbox is checked */
   .checkbox:checked ~ .list {
     transform: translateX(0);
   }
 
   .modalLogin {
-    display: none; /* optional: hide the button on small screens */
+    display: none;
+  }
+
+  /* All Titles */
+  .titles {
+    padding: 30px 2rem 30px 2rem;
+  }
+
+  .titles h1 {
+    font-size: 28px;
+  }
+
+  .titles p {
+    font-size: 14px;
+  }
+
+  /* Responsive Table for Book a Table Section */
+  .table-responsive {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .table-responsive tbody tr {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .table-responsive tbody tr td {
+    width: 100%;
+  }
+
+  .table-responsive tbody tr td input {
+    width: 100%;
+    padding: 10px 15px !important;
+  }
+
+  .inputBook {
+    width: 100% !important;
+  }
+
+  .inputBook1 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .submitmsg {
+    width: 95%;
+    padding: 0 1rem;
+  }
+
+  .send-message {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+  }
+
+  .send-message .img {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .send-message .img img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Responsive Contact Table */
+  .table-responsive-contact {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .table-responsive-contact tbody tr {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .table-responsive-contact tbody tr td {
+    width: 100% !important;
+  }
+
+  .table-responsive-contact tbody tr td input {
+    width: 100%;
+    padding: 8px 10px !important;
+  }
+
+  .topContact {
+    width: 100% !important;
+  }
+
+  .bottomContact {
+    width: 100% !important;
+  }
+
+  .contactme {
+    width: 95%;
+    padding: 0 1rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* All inputs and textareas */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* Carousel responsiveness */
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carouselHero {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .carouselG {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Modal */
+  .loginModal {
+    width: 90vw !important;
+    padding: 20px !important;
+    max-width: 100%;
+  }
+
+  .loginModal input {
+    width: 100% !important;
+  }
+
+  .videoCarousel {
+    width: 100% !important;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 1rem !important;
+  }
+
+  .f-first {
+    flex-direction: column;
+  }
+
+  .contentFooter {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .first1-1,
+  .first1-2 {
+    width: 100% !important;
+  }
+
+  .f-second {
+    padding: 20px 1rem !important;
+  }
+
+  /* All container classes */
+  .container,
+  .description,
+  .ourMenu,
+  .ourGallery,
+  .ourChefs {
+    padding: 0 1rem !important;
   }
 }

@@ -1,921 +1,1257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yummy</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/media.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./public/css/app.css" />
+    <link rel="stylesheet" href="./public/css/media.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Satisfy&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-
+  <body>
     <header>
-        <nav class=" nav-desk navbar fixed-top d-flex justify-content-lg-evenly align-content-center ">
+      <nav
+        class="nav-desk navbar fixed-top d-flex justify-content-lg-evenly align-content-center"
+      >
+        <div class="logo-desk logo">
+          <h2>Yummy<span>.</span></h2>
+        </div>
 
-            <div class=" logo-desk logo">
-                <h2>Yummy<span>.</span></h2>
-            </div>
+        <input class="checkbox" type="checkbox" id="menu" />
+        <div class="list list-desk">
+          <label for="menu">
+            <i class="bi bi-x-lg close"></i>
+          </label>
+          <ul class="d-flex align-content-center gap-5">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#Menu">Menu</a>
+            </li>
+            <li>
+              <a href="#Event">Event</a>
+            </li>
 
-            <input class="checkbox" type="checkbox" id="menu">
-            <div class="list list-desk">
-                <label for="menu">
-                    <i class="bi bi-x-lg close"></i>
-                </label>
-                <ul class=" d-flex  align-content-center gap-5">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#Menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#Event">Event</a>
-                    </li>
+            <li>
+              <a href="#chefs">Chefs</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Dropdown</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#" class="text-black">Dropdown 1</a></li>
+                <li class="deepDropdown">
+                  <a href="#" class="text-black"
+                    ><span>Deep Dropdown</span>
+                    <i class="bi bi-chevron-down"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#" class="text-black">Deep Dropdown 1</a></li>
+                    <li><a href="#" class="text-black">Deep Dropdown 2</a></li>
+                    <li><a href="#" class="text-black">Deep Dropdown 3</a></li>
+                    <li><a href="#" class="text-black">Deep Dropdown 4</a></li>
+                    <li><a href="#" class="text-black">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="text-black">Dropdown 2</a></li>
+                <li><a href="#" class="text-black">Dropdown 3</a></li>
+                <li><a href="#" class="text-black">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-                    <li>
-                        <a href="#chefs">Chefs</a>
-                    </li>
-                    <li>
-                        <a href="#gallery">Gallery</a>
-                    </li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#" class="text-black">Dropdown 1</a></li>
-                            <li class="deepDropdown"><a href="#" class="text-black"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li><a href="#" class="text-black">Deep Dropdown 1</a></li>
-                                    <li><a href="#" class="text-black">Deep Dropdown 2</a></li>
-                                    <li><a href="#" class="text-black">Deep Dropdown 3</a></li>
-                                    <li><a href="#" class="text-black">Deep Dropdown 4</a></li>
-                                    <li><a href="#" class="text-black">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="text-black">Dropdown 2</a></li>
-                            <li><a href="#" class="text-black">Dropdown 3</a></li>
-                            <li><a href="#" class="text-black">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <label for="menu">
+          <i class="bi bi-list menu"></i>
+        </label>
 
-            </div>
-
-            <label for="menu">
-                <i class="bi bi-list menu"></i>
-            </label>
-
-            <div class="opacity3"></div>
-            <button class="modalLogin">
-                <a href="#bookAtable">Book A Table</a>
-            </button>
-
-
-
-        </nav>
-
+        <div class="opacity3"></div>
+        <button class="modalLogin">
+          <a href="#bookAtable">Book A Table</a>
+        </button>
+      </nav>
     </header>
     <div class="modalOpacity"></div>
     <div class="loginModal">
-        <input type="email" placeholder="Enter your email">
-        <input type="password" placeholder="Enter your password">
-        <div class="btns">
-            <button class="login">Login</button>
-            <button class="closeModal"> Close</button>
-        </div>
-
+      <input type="email" placeholder="Enter your email" />
+      <input type="password" placeholder="Enter your password" />
+      <div class="btns">
+        <button class="login">Login</button>
+        <button class="closeModal">Close</button>
+      </div>
     </div>
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="title">
-                    <h1 class="firstH1">Enjoy Your Healthy Delicious Food</h1>
-                    <p>We are team of talented designers making websites with Bootstrap</p>
-                    <div class="btnHero">
-                        <button class="bookAtableBtn">
-                            <a href="#bookAtable">Book A Table</a>
-                        </button>
-                        <button class="videoBtn">
-                            <i class="bi bi-play-circle"></i>
-                            Watch Video
-                        </button>
-                        <div class="carousel-container" id="carousel1">
-                            <div class="carouselHero">
-                                <div class="bgOpacity" id="opacityVideo"></div>
-                                <div class="videoCarousel slide" id="videoHero" targetSlide="slideCarousel1">
-
-                                    <div class="videoContent">
-                                        <span class="close-btn" id="closeBtn0">&times;</span>
-                                        <div class="video-container">
-                                            <iframe class="iframe"
-                                                src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW"
-                                                allowfullscreen allow="autoplay"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="slide" targetSlide="slideCarousel1">
-                                    <span class="close-btn" id="closeBtn1">&times;</span>
-                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="400">
-                                </div>
-                                <div class="slide" targetSlide="slideCarousel1">
-                                    <span class="close-btn" id="closeBtn2">&times;</span>
-                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="400">
-                                </div>
-                                <div class="slide" targetSlide="slideCarousel1">
-                                    <span class="close-btn" id="closeBtn3">&times;</span>
-                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="400">
-                                </div>
-                                <div class="slide" targetSlide="slideCarousel1">
-                                    <span class="close-btn" id="closeBtn4">&times;</span>
-                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="400">
-                                </div>
-                                <div class="slide" targetSlide="slideCarousel1">
-                                    <span class="close-btn" id="closeBtn5">&times;</span>
-                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="400">
-                                </div>
-                            </div>
-
-
-
-                            <button class="prev carpuselBtn" carouselBtn="carousel1"><i
-                                    class="bi bi-chevron-left"></i></button>
-                            <button class="next carpuselBtn" carouselBtn="carousel1"><i
-                                    class="bi bi-chevron-right"></i></button>
-                        </div>
-
-
+      <section class="hero">
+        <div class="container">
+          <div class="title">
+            <h1 class="firstH1">Enjoy Your Healthy Delicious Food</h1>
+            <p>
+              We are team of talented designers making websites with Bootstrap
+            </p>
+            <div class="btnHero">
+              <button class="bookAtableBtn">
+                <a href="#bookAtable">Book A Table</a>
+              </button>
+              <button class="videoBtn">
+                <i class="bi bi-play-circle"></i>
+                Watch Video
+              </button>
+              <div class="carousel-container" id="carousel1">
+                <div class="carouselHero">
+                  <div class="bgOpacity" id="opacityVideo"></div>
+                  <div
+                    class="videoCarousel slide"
+                    id="videoHero"
+                    targetSlide="slideCarousel1"
+                  >
+                    <div class="videoContent">
+                      <span class="close-btn" id="closeBtn0">&times;</span>
+                      <div class="video-container">
+                        <iframe
+                          class="iframe"
+                          src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW"
+                          allowfullscreen
+                          allow="autoplay"
+                        ></iframe>
+                      </div>
                     </div>
+                  </div>
+
+                  <div class="slide" targetSlide="slideCarousel1">
+                    <span class="close-btn" id="closeBtn1">&times;</span>
+                    <img
+                      src="./public/images/menu/menu-item-6.png"
+                      alt=""
+                      width="400"
+                    />
+                  </div>
+                  <div class="slide" targetSlide="slideCarousel1">
+                    <span class="close-btn" id="closeBtn2">&times;</span>
+                    <img
+                      src="./public/images/menu/menu-item-1.png"
+                      alt=""
+                      width="400"
+                    />
+                  </div>
+                  <div class="slide" targetSlide="slideCarousel1">
+                    <span class="close-btn" id="closeBtn3">&times;</span>
+                    <img
+                      src="./public/images/menu/menu-item-2.png"
+                      alt=""
+                      width="400"
+                    />
+                  </div>
+                  <div class="slide" targetSlide="slideCarousel1">
+                    <span class="close-btn" id="closeBtn4">&times;</span>
+                    <img
+                      src="./public/images/menu/menu-item-3.png"
+                      alt=""
+                      width="400"
+                    />
+                  </div>
+                  <div class="slide" targetSlide="slideCarousel1">
+                    <span class="close-btn" id="closeBtn5">&times;</span>
+                    <img
+                      src="./public/images/menu/menu-item-4.png"
+                      alt=""
+                      width="400"
+                    />
+                  </div>
                 </div>
-                <div class="image">
-                    <img src="./public/images/hero-img.png" alt="" width="500">
-                </div>
+
+                <button class="prev carpuselBtn" carouselBtn="carousel1">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="next carpuselBtn" carouselBtn="carousel1">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+              </div>
             </div>
-        </section>
-        <section class="about" id="about">
-            <div class="description">
-                <div class="titleAbout titles">
-                    <p>ABOUT US</p>
-                    <h1>LEARN MORE <span>ABOUT US</span></h1>
-                </div>
-                <div class="parentAbout">
-                    <div class="img">
-                        <img src="./public/images/about.jpg" alt="" width="700">
-                        <div class="nbrBook">
-                            <h3>Book a Table</h3>
-                            <h3 class="nbr">+1 5589 55488 55</h3>
-                        </div>
-                    </div>
-                    <div class="videoDesc">
-                        <div class="desc">
-                            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua.</em></p>
-                            <ul>
-                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea
-                                    commodo
-                                    consequat.</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea
-                                    commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda
-                                    mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint
-                                occaecat cupidatat non proident</p>
-                        </div>
-                        <div class="video video-position">
-                            <button class="videoBtn positionAbs">
-                                <i class="bi bi-play-circle-fill play-button "></i>
-
-                            </button>
-                            <div class="carousel-container" id="carousel2">
-                                <div class="carouselHero">
-                                    <div class="bgOpacity" id="opacityVideo"></div>
-                                    <div class="videoCarousel slide" id="videoAbout" targetSlide="slideCarousel1">
-
-                                        <div class="videoContent">
-                                            <span class="close-btn" id="closeBtn6">&times;</span>
-                                            <div class="video-container">
-                                                <iframe class="iframe"
-                                                    src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW"
-                                                    allowfullscreen allow="autoplay"></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide" targetSlide="slideCarousel1">
-                                        <span class="close-btn" id="closeBtn1">&times;</span>
-                                        <img src="./public/images/menu/menu-item-6.png" alt="" width="400">
-                                    </div>
-                                    <div class="slide" targetSlide="slideCarousel1">
-                                        <span class="close-btn" id="closeBtn2">&times;</span>
-                                        <img src="./public/images/menu/menu-item-1.png" alt="" width="400">
-                                    </div>
-                                    <div class="slide" targetSlide="slideCarousel1">
-                                        <span class="close-btn" id="closeBtn3">&times;</span>
-                                        <img src="./public/images/menu/menu-item-2.png" alt="" width="400">
-                                    </div>
-                                    <div class="slide" targetSlide="slideCarousel1">
-                                        <span class="close-btn" id="closeBtn4">&times;</span>
-                                        <img src="./public/images/menu/menu-item-3.png" alt="" width="400">
-                                    </div>
-                                    <div class="slide" targetSlide="slideCarousel1">
-                                        <span class="close-btn" id="closeBtn5">&times;</span>
-                                        <img src="./public/images/menu/menu-item-4.png" alt="" width="400">
-                                    </div>
-                                </div>
-
-
-
-                                <button class="prev carpuselBtn" carouselBtn="carousel2"><i
-                                        class="bi bi-chevron-left"></i></button>
-                                <button class="next carpuselBtn" carouselBtn="carousel2"><i
-                                        class="bi bi-chevron-right"></i></button>
-                            </div>
-                            <img src="./public/images/about-2.jpg" alt="" width="478" class="positionVideo ">
-
-
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="image">
+            <img src="./public/images/hero-img.png" alt="" width="500" />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="description">
+          <div class="titleAbout titles">
+            <p>ABOUT US</p>
+            <h1>LEARN MORE <span>ABOUT US</span></h1>
+          </div>
+          <div class="parentAbout">
+            <div class="img">
+              <img src="./public/images/about.jpg" alt="" width="700" />
+              <div class="nbrBook">
+                <h3>Book a Table</h3>
+                <h3 class="nbr">+1 5589 55488 55</h3>
+              </div>
             </div>
-            <div class="whyChooseYummy">
-                <div class="parentWhy">
-                    <div class="redWhy">
-                        <h1>Why Choose Yummy</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed
-                            et.
-                            Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
-                        <button>learn more <i class="bi bi-chevron-right"></i></button>
+            <div class="videoDesc">
+              <div class="desc">
+                <p>
+                  <em
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.</em
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Duis aute irure
+                    dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate trideta storacalaperda mastiro
+                    dolore eu fugiat nulla pariatur.
+                  </li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident
+                </p>
+              </div>
+              <div class="video video-position">
+                <button class="videoBtn positionAbs">
+                  <i class="bi bi-play-circle-fill play-button"></i>
+                </button>
+                <div class="carousel-container" id="carousel2">
+                  <div class="carouselHero">
+                    <div class="bgOpacity" id="opacityVideo"></div>
+                    <div
+                      class="videoCarousel slide"
+                      id="videoAbout"
+                      targetSlide="slideCarousel1"
+                    >
+                      <div class="videoContent">
+                        <span class="close-btn" id="closeBtn6">&times;</span>
+                        <div class="video-container">
+                          <iframe
+                            class="iframe"
+                            src="https://www.youtube.com/embed/9OquUp6x5IU?si=RCBkg0HHtRJh8cAW"
+                            allowfullscreen
+                            allow="autoplay"
+                          ></iframe>
+                        </div>
+                      </div>
                     </div>
-                    <div class="details">
-                        <div class="icons">
-                            <i class="bi bi-clipboard-data"></i>
-                            <h4>Corporis voluptates officia eiusmod</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div>
-                        <div class="icons">
-                            <i class="bi bi-gem"></i>
-                            <h4>Ullamco laboris ladore lore pan</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
-                        <div class="icons">
-                            <i class="bi bi-inboxes"></i>
-                            <h4>Labore consequatur incidid dolore</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                        </div>
+
+                    <div class="slide" targetSlide="slideCarousel1">
+                      <span class="close-btn" id="closeBtn1">&times;</span>
+                      <img
+                        src="./public/images/menu/menu-item-6.png"
+                        alt=""
+                        width="400"
+                      />
                     </div>
+                    <div class="slide" targetSlide="slideCarousel1">
+                      <span class="close-btn" id="closeBtn2">&times;</span>
+                      <img
+                        src="./public/images/menu/menu-item-1.png"
+                        alt=""
+                        width="400"
+                      />
+                    </div>
+                    <div class="slide" targetSlide="slideCarousel1">
+                      <span class="close-btn" id="closeBtn3">&times;</span>
+                      <img
+                        src="./public/images/menu/menu-item-2.png"
+                        alt=""
+                        width="400"
+                      />
+                    </div>
+                    <div class="slide" targetSlide="slideCarousel1">
+                      <span class="close-btn" id="closeBtn4">&times;</span>
+                      <img
+                        src="./public/images/menu/menu-item-3.png"
+                        alt=""
+                        width="400"
+                      />
+                    </div>
+                    <div class="slide" targetSlide="slideCarousel1">
+                      <span class="close-btn" id="closeBtn5">&times;</span>
+                      <img
+                        src="./public/images/menu/menu-item-4.png"
+                        alt=""
+                        width="400"
+                      />
+                    </div>
+                  </div>
+
+                  <button class="prev carpuselBtn" carouselBtn="carousel2">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button class="next carpuselBtn" carouselBtn="carousel2">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
                 </div>
+                <img
+                  src="./public/images/about-2.jpg"
+                  alt=""
+                  width="478"
+                  class="positionVideo"
+                />
+              </div>
             </div>
-            <div class="lastDivAbout">
-                <div class="bg-img">
-                    <div class="opacity"></div>
-                    <div class="stats">
-                        <div class="stat">
-                            <h1>232</h1>
-                            <p>Clients</p>
-                        </div>
-                        <div class="stat">
-                            <h1>521</h1>
-                            <p>Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h1>1453</h1>
-                            <p>Hours Of Support</p>
-                        </div>
-                        <div class="stat">
-                            <h1>32</h1>
-                            <p>Workers</p>
-                        </div>
-                    </div>
-
-                </div>
+          </div>
+        </div>
+        <div class="whyChooseYummy">
+          <div class="parentWhy">
+            <div class="redWhy">
+              <h1>Why Choose Yummy</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit Asperiores dolores sed et.
+                Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                optio ad corporis.
+              </p>
+              <button>learn more <i class="bi bi-chevron-right"></i></button>
             </div>
-        </section>
-        <section class="ourMenu" id="Menu">
-            <div class="titleMenu titles">
-                <p>OUR MENU</p>
-                <h1>CHECK OUR <span>YUMMY MENU
-                    </span></h1>
+            <div class="details">
+              <div class="icons">
+                <i class="bi bi-clipboard-data"></i>
+                <h4>Corporis voluptates officia eiusmod</h4>
+                <p>
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                  laboris nisi ut aliquip
+                </p>
+              </div>
+              <div class="icons">
+                <i class="bi bi-gem"></i>
+                <h4>Ullamco laboris ladore lore pan</h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+              </div>
+              <div class="icons">
+                <i class="bi bi-inboxes"></i>
+                <h4>Labore consequatur incidid dolore</h4>
+                <p>
+                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                  maiores omnis facere
+                </p>
+              </div>
             </div>
-            <div class="plats">
-                <div class="platsOfDay">
-                    <ul class="listesOfDay">
-                        <li class="starters" data-category="starters">Starters</li>
-                        <li class="breakfast" data-category="breakfast">Breakfast</li>
-                        <li class="lunch" data-category="lunch">Lunch</li>
-                        <li class="dinner" data-category="dinner">Dinner</li>
-                    </ul>
-                    <div class="plat-list">
-                        <div class="startersPlats show  transitionList" data-category="starters">
-                            <div class="namePlat titles">
-                                <p>MENU</p>
-                                <h3>Starters</h3>
-                            </div>
-                            <div class="platsDetails">
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="300">
-                                    <h2>Magnam Tiste</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$5.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="300">
-                                    <h2>Aut Luia</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$14.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="300">
-                                    <h2>Est Eligendi</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$8.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-5.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="300">
-                                    <h2>Laboriosam Direva</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$9.95</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="breakfastPlats hide transitionList" data-category="breakfast">
-                            <div class="namePlat titles">
-                                <p>MENU</p>
-                                <h3>Breakfast</h3>
-                            </div>
-                            <div class="platsDetails">
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="300">
-                                    <h2>Magnam Tiste</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$5.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="300">
-                                    
-                                    <h2>Aut Luia</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$14.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="300">
-                                    <h2>Est Eligendi</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$8.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="300">
-                                    
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-5.png" alt="" width="300">
-                                    <h2>Laboriosam Direva</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$9.95</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lunchPlats hide transitionList" data-category="lunch">
-                            <div class="namePlat titles">
-                                <p>MENU</p>
-                                <h3>Lunch</h3>
-                            </div>
-                            <div class="platsDetails">
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="300">
-                                    <h2>Magnam Tiste</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$5.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="300">
-                                    <h2>Aut Luia</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$14.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="300">
-                                    <h2>Est Eligendi</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$8.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-5.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="300">
-                                    <h2>Laboriosam Direva</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$9.95</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dinnerPlats hide transitionList" data-category="dinner">
-                            <div class="namePlat titles">
-                                <p>MENU</p>
-                                <h3>Dinner</h3>
-                            </div>
-                            <div class="platsDetails">
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-5.png" alt="" width="300">
-                                    <h2>Magnam Tiste</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$5.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-6.png" alt="" width="300">
-                                    <h2>Aut Luia</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$14.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-3.png" alt="" width="300">
-                                    <h2>Est Eligendi</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$8.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-4.png" alt="" width="300">
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-1.png" alt="" width="300">
-                                    
-                                    <h2>Eos Luibusdam</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$12.95</p>
-                                </div>
-                                <div class="prices">
-                                    <img src="./public/images/menu/menu-item-2.png" alt="" width="300">
-                                    
-                                    <h2>Laboriosam Direva</h2>
-                                    <p>Lorem, deren, trataro, filede, nerada</p>
-                                    <p class="price">$9.95</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="lastDivAbout">
+          <div class="bg-img">
+            <div class="opacity"></div>
+            <div class="stats">
+              <div class="stat">
+                <h1>232</h1>
+                <p>Clients</p>
+              </div>
+              <div class="stat">
+                <h1>521</h1>
+                <p>Projects</p>
+              </div>
+              <div class="stat">
+                <h1>1453</h1>
+                <p>Hours Of Support</p>
+              </div>
+              <div class="stat">
+                <h1>32</h1>
+                <p>Workers</p>
+              </div>
             </div>
-        </section>
-        <section class="testimonial" id="">
-            <div class="testimonials">
-                <div class="titletest titles">
-                    <p>TESTIMONIALS</p>
-                    <h1>WHAT ARE THEY <span>SAYING ABOUT US</span></h1>
+          </div>
+        </div>
+      </section>
+      <section class="ourMenu" id="Menu">
+        <div class="titleMenu titles">
+          <p>OUR MENU</p>
+          <h1>CHECK OUR <span>YUMMY MENU </span></h1>
+        </div>
+        <div class="plats">
+          <div class="platsOfDay">
+            <ul class="listesOfDay">
+              <li class="starters" data-category="starters">Starters</li>
+              <li class="breakfast" data-category="breakfast">Breakfast</li>
+              <li class="lunch" data-category="lunch">Lunch</li>
+              <li class="dinner" data-category="dinner">Dinner</li>
+            </ul>
+            <div class="plat-list">
+              <div
+                class="startersPlats show transitionList"
+                data-category="starters"
+              >
+                <div class="namePlat titles">
+                  <p>MENU</p>
+                  <h3>Starters</h3>
                 </div>
-                <div class="carouselTest">
-                   <div class="carousels">
-                     <div class="comments carousel1">
-                        <div class="infos">
-                            <p>
-                                <i class="bi bi-quote quote-icon-left modify"></i>
-                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat
-                                    minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                    labore illum veniam. </span>
-                                <i class="bi bi-quote quote-icon-right modify"></i>
-                            </p>
-                            <h3> John Larson</h3>
-                            <p class="fontSize">Entrepreneur</p>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <img src="./public/images/testimonials/testimonials-1.jpg" alt="" width="200"
-                            class="border-radius">
-
-                    </div>
-                    <div class="comments carousel2">
-                        <div class="infos">
-                            <p>
-                                <i class="bi bi-quote quote-icon-left modify"></i>
-                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat
-                                    minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                    labore illum veniam. </span>
-                                <i class="bi bi-quote quote-icon-right modify"></i>
-                            </p>
-                            <h3> Sara Goodman</h3>
-                            <p class="fontSize"> Ceo & Founder</p>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <img src="./public/images/testimonials/testimonials-2.jpg" alt="" width="200"
-                            class="border-radius">
-
-                    </div>
-                    <div class="comments carousel3">
-                        <div class="infos">
-                            <p>
-                                <i class="bi bi-quote quote-icon-left modify"></i>
-                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat
-                                    minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                    labore illum veniam. </span>
-                                <i class="bi bi-quote quote-icon-right modify"></i>
-                            </p>
-                            <h3> JENA KARLIS</h3>
-                            <p class="fontSize"> DESINER</p>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <img src="./public/images/testimonials/testimonials-3.jpg" alt="" width="200"
-                            class="border-radius">
-
-                    </div>
-                    <div class="comments carousel4">
-                        <div class="infos">
-                            <p>
-                                <i class="bi bi-quote quote-icon-left modify"></i>
-                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat
-                                    minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                    labore illum veniam. </span>
-                                <i class="bi bi-quote quote-icon-right modify"></i>
-                            </p>
-                            <h3> AMAL ELBOUHEMI</h3>
-                            <p class="fontSize"> DESINER</p>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <img src="./public/images/testimonials/testimonials-4.jpg" alt="" width="200"
-                            class="border-radius">
-
-                    </div>
-                   </div>
+                <div class="platsDetails">
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-1.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$5.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-2.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Aut Luia</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$14.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-3.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Est Eligendi</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$8.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-4.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-5.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-6.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Laboriosam Direva</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$9.95</p>
+                  </div>
                 </div>
+              </div>
+              <div
+                class="breakfastPlats hide transitionList"
+                data-category="breakfast"
+              >
+                <div class="namePlat titles">
+                  <p>MENU</p>
+                  <h3>Breakfast</h3>
+                </div>
+                <div class="platsDetails">
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-2.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$5.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-3.png"
+                      alt=""
+                      width="300"
+                    />
+
+                    <h2>Aut Luia</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$14.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-1.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Est Eligendi</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$8.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-4.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-6.png"
+                      alt=""
+                      width="300"
+                    />
+
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-5.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Laboriosam Direva</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$9.95</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lunchPlats hide transitionList" data-category="lunch">
+                <div class="namePlat titles">
+                  <p>MENU</p>
+                  <h3>Lunch</h3>
+                </div>
+                <div class="platsDetails">
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-6.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$5.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-4.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Aut Luia</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$14.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-3.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Est Eligendi</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$8.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-2.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-5.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-1.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Laboriosam Direva</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$9.95</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="dinnerPlats hide transitionList"
+                data-category="dinner"
+              >
+                <div class="namePlat titles">
+                  <p>MENU</p>
+                  <h3>Dinner</h3>
+                </div>
+                <div class="platsDetails">
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-5.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Magnam Tiste</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$5.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-6.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Aut Luia</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$14.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-3.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Est Eligendi</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$8.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-4.png"
+                      alt=""
+                      width="300"
+                    />
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-1.png"
+                      alt=""
+                      width="300"
+                    />
+
+                    <h2>Eos Luibusdam</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$12.95</p>
+                  </div>
+                  <div class="prices">
+                    <img
+                      src="./public/images/menu/menu-item-2.png"
+                      alt=""
+                      width="300"
+                    />
+
+                    <h2>Laboriosam Direva</h2>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <p class="price">$9.95</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="events" id="Event">
-            <div class="carousel parties">
-                <div class="styleRepeat custum">
-                    <div class="opacity2"></div>
-                    <div class="priceOfParties">
-                        <h3>Custum Parties</h3>
-                        <h1>$899</h1>
-                        <p class="descrip">
-                            Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere.
-                            Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-                        </p>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial" id="">
+        <div class="testimonials">
+          <div class="titletest titles">
+            <p>TESTIMONIALS</p>
+            <h1>WHAT ARE THEY <span>SAYING ABOUT US</span></h1>
+          </div>
+          <div class="carouselTest">
+            <div class="carousels">
+              <div class="comments carousel1">
+                <div class="infos">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left modify"></i>
+                    <span
+                      >Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit minim dolor
+                      enim duis veniam ipsum anim magna sunt elit fore quem
+                      dolore labore illum veniam.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right modify"></i>
+                  </p>
+                  <h3>John Larson</h3>
+                  <p class="fontSize">Entrepreneur</p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
-                <div class="styleRepeat private">
-                    <div class="opacity2"></div>
-                    <div class="priceOfParties">
-                        <h3>Private Parties</h3>
-                        <h1>$99</h1>
-                        <p class="descrip">
-                            Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere.
-                            Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-                        </p>
-                    </div>
-
+                <img
+                  src="./public/images/testimonials/testimonials-1.jpg"
+                  alt=""
+                  width="200"
+                  class="border-radius"
+                />
+              </div>
+              <div class="comments carousel2">
+                <div class="infos">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left modify"></i>
+                    <span
+                      >Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit minim dolor
+                      enim duis veniam ipsum anim magna sunt elit fore quem
+                      dolore labore illum veniam.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right modify"></i>
+                  </p>
+                  <h3>Sara Goodman</h3>
+                  <p class="fontSize">Ceo & Founder</p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
-                <div class="styleRepeat birthday">
-                    <div class="opacity2"></div>
-
-                    <div class="priceOfParties">
-                        <h3>Birthday Parties</h3>
-                        <h1>$199</h1>
-                        <p class="descrip">
-                            Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere.
-                            Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-                        </p>
-                    </div>
+                <img
+                  src="./public/images/testimonials/testimonials-2.jpg"
+                  alt=""
+                  width="200"
+                  class="border-radius"
+                />
+              </div>
+              <div class="comments carousel3">
+                <div class="infos">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left modify"></i>
+                    <span
+                      >Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit minim dolor
+                      enim duis veniam ipsum anim magna sunt elit fore quem
+                      dolore labore illum veniam.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right modify"></i>
+                  </p>
+                  <h3>JENA KARLIS</h3>
+                  <p class="fontSize">DESINER</p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
-                <div class="styleRepeat wedding">
-                    <div class="opacity2"></div>
-
-                    <div class="priceOfParties">
-                        <h3>Wedding Parties</h3>
-                        <h1>$1029</h1>
-                        <p class="descrip">
-                            Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere.
-                            Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-                        </p>
-                    </div>
+                <img
+                  src="./public/images/testimonials/testimonials-3.jpg"
+                  alt=""
+                  width="200"
+                  class="border-radius"
+                />
+              </div>
+              <div class="comments carousel4">
+                <div class="infos">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left modify"></i>
+                    <span
+                      >Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit minim dolor
+                      enim duis veniam ipsum anim magna sunt elit fore quem
+                      dolore labore illum veniam.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right modify"></i>
+                  </p>
+                  <h3>AMAL ELBOUHEMI</h3>
+                  <p class="fontSize">DESINER</p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
+                <img
+                  src="./public/images/testimonials/testimonials-4.jpg"
+                  alt=""
+                  width="200"
+                  class="border-radius"
+                />
+              </div>
             </div>
-        </section>
-        <section class="ourChefs" id="chefs">
-            <div class="titleMenu titles">
-                <p>CHEFS</p>
-                <h1>OUR <span>YUMMY MENU
-                    </span></h1>
+          </div>
+        </div>
+      </section>
+      <section class="events" id="Event">
+        <div class="carousel parties">
+          <div class="styleRepeat custum">
+            <div class="opacity2"></div>
+            <div class="priceOfParties">
+              <h3>Custum Parties</h3>
+              <h1>$899</h1>
+              <p class="descrip">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente
+                ipsum voluptas eos omnis facere. Enim facilis veritatis id est
+                rem repudiandae nulla expedita quas.
+              </p>
             </div>
-            <div class="chefs">
-                <div class="master">
-                    <div class="chefImage">
-                        <img src="./public/images/chefs/chefs-1.jpg" alt="" width="350">
-                    </div>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="content">
-
-                        <h4>Walter White</h4>
-                        <span>Master Chef</span>
-                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut.
-                            Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-
-                    </div>
-                </div>
-                <div class="patissier">
-                    <div class="chefImage">
-                        <img src="./public/images/chefs/chefs-2.jpg" alt="" width="350">
-                    </div>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="content">
-
-                        <h4>Sarah Jhonson</h4>
-                        <span>Patissier</span>
-                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
-                            corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-
-                    </div>
-                </div>
-                <div class="cook">
-                    <div class="chefImage">
-                        <img src="./public/images/chefs/chefs-3.jpg" alt="" width="350">
-                    </div>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="content">
-
-                        <h4>William Anderson</h4>
-                        <span>Cook</span>
-                        <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates
-                            enim aut architecto porro aspernatur molestiae modi.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="styleRepeat private">
+            <div class="opacity2"></div>
+            <div class="priceOfParties">
+              <h3>Private Parties</h3>
+              <h1>$99</h1>
+              <p class="descrip">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente
+                ipsum voluptas eos omnis facere. Enim facilis veritatis id est
+                rem repudiandae nulla expedita quas.
+              </p>
             </div>
-        </section>
-        <section class="book-a-table" id="bookAtable">
+          </div>
+          <div class="styleRepeat birthday">
+            <div class="opacity2"></div>
 
-            <div class="titleBook titles">
-                <p>BOOK A TABLE</p>
-                <h1>Book a<span>Table</span></h1>
+            <div class="priceOfParties">
+              <h3>Birthday Parties</h3>
+              <h1>$199</h1>
+              <p class="descrip">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente
+                ipsum voluptas eos omnis facere. Enim facilis veritatis id est
+                rem repudiandae nulla expedita quas.
+              </p>
             </div>
+          </div>
+          <div class="styleRepeat wedding">
+            <div class="opacity2"></div>
 
-
-            <div class="send-message">
-                <div class="img">
-                    <img src="./public/images/reservation.jpg" alt="" width="400">
-                </div>
-                <div class="submitmsg">
-                    <form action="">
-                        <div class="inputsBook">
-                            <input class="inputBook" type="text" placeholder="your name">
-                            <input class="inputBook" type="email" placeholder="Your Email">
-                            <input class="inputBook" type="number" placeholder="your phone">
-
-                            <input class="input padding1" type="date" placeholder="">
-                            <input class="input padding2" type="time" placeholder="">
-                            <input class="inputBook" type="text" placeholder="# of people">
-
-
-                        </div>
-                        <textarea name="" id="" placeholder="message" rows="10"></textarea>
-                    </form>
-                    <button class="bookAtableBtn">Book A Table</button>
-
-                </div>
+            <div class="priceOfParties">
+              <h3>Wedding Parties</h3>
+              <h1>$1029</h1>
+              <p class="descrip">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente
+                ipsum voluptas eos omnis facere. Enim facilis veritatis id est
+                rem repudiandae nulla expedita quas.
+              </p>
             </div>
-
-        </section>
-        <section class="gallery" id="gallery">
-            <div class="ourGallery">
-                <div class="titletest titles">
-                    <p>GALLERY</p>
-                    <h1>CHECK <span>OUR GALLERY</span></h1>
-                </div>
-                <div class="carouselGallery carousel-reapet"  id="carousel5">
-                    <div class="carouselG">
-                         <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-1.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-2.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-3.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-4.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-5.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-6.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-7.jpg" alt="" width="255">
-                    </div>
-                    <div class="cards" targetSlide="slideCarousel2">
-                        <img src="./public/images/gallery/gallery-8.jpg" alt="" width="255">
-                    </div>
-                    </div>
-                   
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="ourChefs" id="chefs">
+        <div class="titleMenu titles">
+          <p>CHEFS</p>
+          <h1>OUR <span>YUMMY MENU </span></h1>
+        </div>
+        <div class="chefs">
+          <div class="master">
+            <div class="chefImage">
+              <img src="./public/images/chefs/chefs-1.jpg" alt="" width="350" />
             </div>
-        </section>
-        <section class="contactUs" id="contact">
-            <div class="titleContact titles">
-                <p>CONTACT</p>
-                <h1>CHECK OUR <span>CONTACT
-                    </span></h1>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13347.067252661609!2d-8.542617603388672!3d33.246411951065284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91c2b168de333%3A0xf8e4fdf88e2c3adc!2sEspace%20Chair!5e0!3m2!1sfr!2sma!4v1744761875626!5m2!1sfr!2sma"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="content">
+              <h4>Walter White</h4>
+              <span>Master Chef</span>
+              <p>
+                Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+                corporis et voluptate.
+              </p>
             </div>
-            <div class="contact">
-                <div class="touch">
+          </div>
+          <div class="patissier">
+            <div class="chefImage">
+              <img src="./public/images/chefs/chefs-2.jpg" alt="" width="350" />
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="content">
+              <h4>Sarah Jhonson</h4>
+              <span>Patissier</span>
+              <p>
+                Quo esse repellendus quia id. Est eum et accusantium pariatur
+                fugit nihil minima suscipit corporis. Voluptate sed quas
+                reiciendis animi neque sapiente.
+              </p>
+            </div>
+          </div>
+          <div class="cook">
+            <div class="chefImage">
+              <img src="./public/images/chefs/chefs-3.jpg" alt="" width="350" />
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="content">
+              <h4>William Anderson</h4>
+              <span>Cook</span>
+              <p>
+                Vero omnis enim consequatur. Voluptas consectetur unde qui
+                molestiae deserunt. Voluptates enim aut architecto porro
+                aspernatur molestiae modi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="book-a-table" id="bookAtable">
+        <div class="titleBook titles">
+          <p>BOOK A TABLE</p>
+          <h1>Book a<span>Table</span></h1>
+        </div>
 
-                    <div class="callus">
-                        <div class="border-b">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
-                            </div>
-                        </div>
-                        <div class="border-b ">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div>
-                                <h4>Email:</h4>
-                                <p>info@example.com</p>
-                            </div>
-                        </div>
-                        <div class="border-b">
-                            <i class="bi bi-phone flex-shrink-0"></i>
-                            <div>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55</p>
-                            </div>
-                        </div>
-                        <div class="border-b">
-                            <i class="icon bi bi-clock flex-shrink-0"></i>
-                            <div>
-                                <h4>Opening Hours:</h4>
-                                <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="send-message">
+          <div class="img">
+            <img src="./public/images/reservation.jpg" alt="" width="400" />
+          </div>
+          <div class="submitmsg">
+            <form action="">
+              <table class="table-responsive">
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        class="inputBook"
+                        type="text"
+                        placeholder="your name"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputBook"
+                        type="email"
+                        placeholder="Your Email"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputBook"
+                        type="number"
+                        placeholder="your phone"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        class="input padding1"
+                        type="date"
+                        placeholder=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="input padding2"
+                        type="time"
+                        placeholder=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputBook"
+                        type="text"
+                        placeholder="# of people"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <textarea
+                name=""
+                id=""
+                placeholder="message"
+                rows="10"
+                class="inputBook1"
+              ></textarea>
+            </form>
+            <button class="bookAtableBtn">Book A Table</button>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="ourGallery">
+          <div class="titletest titles">
+            <p>GALLERY</p>
+            <h1>CHECK <span>OUR GALLERY</span></h1>
+          </div>
+          <div class="carouselGallery carousel-reapet" id="carousel5">
+            <div class="carouselG">
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-1.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-2.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-3.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-4.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-5.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-6.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-7.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+              <div class="cards" targetSlide="slideCarousel2">
+                <img
+                  src="./public/images/gallery/gallery-8.jpg"
+                  alt=""
+                  width="255"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactUs" id="contact">
+        <div class="titleContact titles">
+          <p>CONTACT</p>
+          <h1>CHECK OUR <span>CONTACT </span></h1>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13347.067252661609!2d-8.542617603388672!3d33.246411951065284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91c2b168de333%3A0xf8e4fdf88e2c3adc!2sEspace%20Chair!5e0!3m2!1sfr!2sma!4v1744761875626!5m2!1sfr!2sma"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact">
+          <div class="touch">
+            <div class="callus">
+              <div class="border-b">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-                <div class="contactme">
-                    <form action="">
-                        <div class="inputs">
-                            <div>
-                                <input class="input topContact" type="text" placeholder="your name">
-                                <input class="input topContact" type="email" placeholder="Your Email">
-                            </div>
-
-                            <input class="input bottomContact" type="text" placeholder="Subject">
-                        </div>
-                        <textarea class="textarea" name="" id="" placeholder="message" rows="10"></textarea>
-                    </form>
-                    <button class="bookAtableBtn">Send me message</button>
-
+              </div>
+              <div class="border-b">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
                 </div>
-
-
+              </div>
+              <div class="border-b">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+              <div class="border-b">
+                <i class="icon bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Opening Hours:</h4>
+                  <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="contactme">
+            <form action="">
+              <table class="table-responsive-contact">
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        class="input topContact"
+                        type="text"
+                        placeholder="your name"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="input topContact"
+                        type="email"
+                        placeholder="Your Email"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input
+                        class="input bottomContact"
+                        type="text"
+                        placeholder="Subject"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <textarea
+                class="textarea"
+                name=""
+                id=""
+                placeholder="message"
+                rows="10"
+              ></textarea>
+            </form>
+            <button class="bookAtableBtn">Send me message</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class=" f-first d-flex justify-content-center align-items-center  displayFollow"
-            style="border-bottom: 1px solid grey;">
-            <div class="contentFooter">
-                <div class="first1-1 d-flex gap-3 changeColor">
-                    <i class=" fs-4 bi-geo-alt text-orange"></i>
-                    <div>
-                        <h4 class="text-white">Adress</h4>
-                        <p class=" text-white">A108 Adam Street</p>
-                        <p class="text-white">New York, NY 535022</p>
-                    </div>
-                </div>
-                <div class="first1-1 d-flex gap-3 changeColor ">
-                    <i class="fs-4 bi bi-telephone text-orange"></i>
-                    <div>
-                        <h4 class="text-white">Contact</h4>
-                        <p class="text-white"><span><b>Phone: </b></span>1 5589 55488 55</p>
-                        <p class="text-white"><span><b>Email: </b></span>info@example.com</p>
-                    </div>
-                </div>
-                <div class="first1-1 d-flex gap-3 changeColor">
-                    <i class=" fs-4 fs-3 text-orange bi bi-clock text-orange"></i>
-                    <div>
-                        <h4 class="text-white">Opening Hours</h4>
-                        <p class="text-white"><span><b>Mon-Sat: </b></span>11AM - 23PM</p>
-                        <p class="text-white"><span><b>Sunday: </b></span>Closed</p>
-                    </div>
-                </div>
+      <div
+        class="f-first d-flex justify-content-center align-items-center displayFollow"
+        style="border-bottom: 1px solid grey"
+      >
+        <div class="contentFooter">
+          <div class="first1-1 d-flex gap-3 changeColor">
+            <i class="fs-4 bi-geo-alt text-orange"></i>
+            <div>
+              <h4 class="text-white">Adress</h4>
+              <p class="text-white">A108 Adam Street</p>
+              <p class="text-white">New York, NY 535022</p>
             </div>
-            <div class="first1-2 w-25 ">
-                <h4 class="fw-bold text-white">Follow Us</h4>
-                <div class="d-flex gap-4 borderFooter">
-                    <i
-                        class=" fs-5 d-flex justify-content-center align-items-center f-icon text-grey  bi-twitter-x"></i>
-                    <i
-                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-facebook"></i>
-                    <i
-                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-instagram"></i>
-                    <i
-                        class=" fs-5 d-flex justify-content-center align-items-center f-icon  text-grey bi bi-linkedin"></i>
-                </div>
+          </div>
+          <div class="first1-1 d-flex gap-3 changeColor">
+            <i class="fs-4 bi bi-telephone text-orange"></i>
+            <div>
+              <h4 class="text-white">Contact</h4>
+              <p class="text-white">
+                <span><b>Phone: </b></span>1 5589 55488 55
+              </p>
+              <p class="text-white">
+                <span><b>Email: </b></span>info@example.com
+              </p>
             </div>
+          </div>
+          <div class="first1-1 d-flex gap-3 changeColor">
+            <i class="fs-4 fs-3 text-orange bi bi-clock text-orange"></i>
+            <div>
+              <h4 class="text-white">Opening Hours</h4>
+              <p class="text-white">
+                <span><b>Mon-Sat: </b></span>11AM - 23PM
+              </p>
+              <p class="text-white">
+                <span><b>Sunday: </b></span>Closed
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="f-second d-flex flex-column align-items-center pt-5">
-            <p class="text-white">Copyright <span class="text-white"><b>Yummy</b></span> All Rights Reserved</p>
+        <div class="first1-2 w-25">
+          <h4 class="fw-bold text-white">Follow Us</h4>
+          <div class="d-flex gap-4 borderFooter">
+            <i
+              class="fs-5 d-flex justify-content-center align-items-center f-icon text-grey bi-twitter-x"
+            ></i>
+            <i
+              class="fs-5 d-flex justify-content-center align-items-center f-icon text-grey bi bi-facebook"
+            ></i>
+            <i
+              class="fs-5 d-flex justify-content-center align-items-center f-icon text-grey bi bi-instagram"
+            ></i>
+            <i
+              class="fs-5 d-flex justify-content-center align-items-center f-icon text-grey bi bi-linkedin"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="f-second d-flex flex-column align-items-center pt-5">
+        <p class="text-white">
+          Copyright <span class="text-white"><b>Yummy</b></span> All Rights
+          Reserved
+        </p>
 
-            <p class="text-white">Designed by <span class="textColor">BootstrapMade</span></p>
-        </div>
+        <p class="text-white">
+          Designed by <span class="textColor">BootstrapMade</span>
+        </p>
+      </div>
     </footer>
     <script src="./public/js/app.js"></script>
-</body>
-
+  </body>
 </html>
